@@ -1,4 +1,52 @@
-.footer{
-  margin-left : 80px;
-  font-size : 18px;
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+.grid-container {
+  /* display: grid;
+  grid-template-columns: 1fr .5fr 1fr; */
+  display: flex;
+  columns: 3;
+  margin-left: 80px;
+  margin-right: 80px;
+  padding-bottom: 10px;
+  justify-content: center;
+  /* max-width: 1500px; */
+}
+
+
+.grid-container>div {
+  display: flex;
+  border: 1px pink;
+  padding: 2px;
+  padding-top: 10px;
+  padding-left: 100px;
+  padding-right: 100px;
+  text-align: center;
+  flex-direction: row;
+}
+
+.Characters {
+  border: 1px solid lightgrey;
+  box-shadow: 1px 1px lightgrey;
+  padding-left: 3px;
+  border-radius: 8px;
+  border-spacing: 10px;
+  padding: 5px;
+}
+
+#Score {
+  column-width: 10px;
+}
+
+#Images {
+  width: 75px;
+  height: 75px;
+}
+
+
+.footer {
+  margin-left: 320px;
+  font-size: 18px;
 }
